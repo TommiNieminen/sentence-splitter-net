@@ -17,6 +17,63 @@ namespace SentenceSplitterTests
         }
 
         [TestMethod]
+        public void TestFi()
+        {
+            var splitter = new SentenceSplitter("fi");
+
+            this.TestParagraph(
+               splitter,
+               "Talvisodassa hän palveli mm. toimistopäällikkönä 5. divisioonassa sekä V. armeijakunnan esikunnassa. Jatkosodan aikana hän komensi pataljoonaa JR 53:ssa.",
+               new List<string> {
+                   "Talvisodassa hän palveli mm. toimistopäällikkönä 5. divisioonassa sekä V. armeijakunnan esikunnassa.",
+                   "Jatkosodan aikana hän komensi pataljoonaa JR 53:ssa."
+               });
+        }
+
+        [TestMethod]
+        public void TestEs()
+        {
+            var splitter = new SentenceSplitter("pt");
+
+            this.TestParagraph(
+               splitter,
+               "La UE ofrece una gran variedad de empleos en un entorno multinacional y multilingüe. La Oficina Europea de Selección de Personal (EPSO) se ocupa de la contratación, sobre todo mediante oposiciones generales.",
+               new List<string> {
+                   "La UE ofrece una gran variedad de empleos en un entorno multinacional y multilingüe.",
+                    "La Oficina Europea de Selección de Personal (EPSO) se ocupa de la contratación, sobre todo mediante oposiciones generales."
+               });
+        }
+
+        [TestMethod]
+        public void TestPt()
+        {
+            var splitter = new SentenceSplitter("pt");
+
+            this.TestParagraph(
+               splitter,
+               "Isto é um parágrafo. Contém várias frases. «Mas porquê,» perguntas tu?",
+               new List<string> {
+                   "Isto é um parágrafo.",
+                    "Contém várias frases.",
+                    "«Mas porquê,» perguntas tu?"
+               });
+        }
+
+        [TestMethod]
+        public void TestEl()
+        {
+            var splitter = new SentenceSplitter("el");
+
+            this.TestParagraph(
+               splitter,
+               "Όλα τα συστήματα ανώτατης εκπαίδευσης σχεδιάζονται σε εθνικό επίπεδο. Η ΕΕ αναλαμβάνει κυρίως να συμβάλει στη βελτίωση της συγκρισιμότητας μεταξύ των διάφορων συστημάτων και να βοηθά φοιτητές και καθηγητές να μετακινούνται με ευκολία μεταξύ των συστημάτων των κρατών μελών.",
+               new List<string> {
+                   "Όλα τα συστήματα ανώτατης εκπαίδευσης σχεδιάζονται σε εθνικό επίπεδο.",
+                   "Η ΕΕ αναλαμβάνει κυρίως να συμβάλει στη βελτίωση της συγκρισιμότητας μεταξύ των διάφορων συστημάτων και να βοηθά φοιτητές και καθηγητές να μετακινούνται με ευκολία μεταξύ των συστημάτων των κρατών μελών."
+               });
+        }
+
+        [TestMethod]
         public void TestFr()
         {
             var splitter = new SentenceSplitter("fr");

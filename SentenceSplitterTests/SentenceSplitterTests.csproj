@@ -56,7 +56,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\sentence-splitter-net\SentenceSplitterNet\SentenceSplitterNet.csproj">
+    <ProjectReference Include="..\SentenceSplitterNet\SentenceSplitterNet.csproj">
       <Project>{496ee2d1-12dc-4153-8e3c-68810a50a0b7}</Project>
       <Name>SentenceSplitterNet</Name>
     </ProjectReference>
