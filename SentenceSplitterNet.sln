@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1433
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SentenceSplitterNet", "SentenceSplitterNet\SentenceSplitterNet.csproj", "{496EE2D1-12DC-4153-8E3C-68810A50A0B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SentenceSplitterTests", "..\SentenceSplitterTests\SentenceSplitterTests.csproj", "{3A8D5A3D-83BF-42E8-82FD-A2BD4E6C4AEA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{496EE2D1-12DC-4153-8E3C-68810A50A0B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{496EE2D1-12DC-4153-8E3C-68810A50A0B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{496EE2D1-12DC-4153-8E3C-68810A50A0B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{496EE2D1-12DC-4153-8E3C-68810A50A0B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A8D5A3D-83BF-42E8-82FD-A2BD4E6C4AEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A8D5A3D-83BF-42E8-82FD-A2BD4E6C4AEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A8D5A3D-83BF-42E8-82FD-A2BD4E6C4AEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A8D5A3D-83BF-42E8-82FD-A2BD4E6C4AEA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A3A6BCBE-18EB-4FCC-A9C4-9C8882CC3053}
+	EndGlobalSection
+EndGlobal
